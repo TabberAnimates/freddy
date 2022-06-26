@@ -4,6 +4,4 @@ function reset() {
 var count = 0;
 }
 
-reset(); 
-
     
