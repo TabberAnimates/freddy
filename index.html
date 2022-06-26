@@ -17,6 +17,7 @@
         </style>
     </head>
     <body>
+    <script src="game.js"></script>
     <center>
     <audio id="myAudio">
        <source src="honk.mp3" type="audio/mpeg">
@@ -28,19 +29,6 @@
              <img src="freddy.png" alt="Girl in a jacket" width="250" height="300">
         </a>
     <br>
-    <script>
-    var count = 0;
-    var x = document.getElementById("myAudio"); 
-
-    function playAudio() { 
-      x.pause;
-      x.currentTime = 0;
-      x.play();
-      count = count + 1;
-      document.getElementById("score").innerHTML = count;
-    }
-
-    </script>
     <audio id="freddy" controls>
         <source src="march.mp3" type="audio/mpeg">
     </audio>
