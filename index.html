@@ -24,12 +24,10 @@
     <script src="game.js"></script>
     
     <h1>Freddy</h1>
-    <br>
-        <a href="javascript:playAudio()">
-             <img src="freddy.png" alt="Girl in a jacket" width="250" height="300">
-        </a>
-    <br>
     <script>
+      //Gets Freddy nose honk sound effect
+      var x = document.getElementById("myAudio");
+      
       // Stuff for the score    
       function playAudio() { 
       x.pause;
@@ -39,6 +37,11 @@
       document.getElementById("score").innerHTML = count;
       }
      </script>
+    <br>
+        <a href="javascript:playAudio()">
+             <img src="freddy.png" alt="Girl in a jacket" width="250" height="300">
+        </a>
+    <br>
     <audio id="freddy" controls>
         <source src="march.mp3" type="audio/mpeg">
     </audio>
