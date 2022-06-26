@@ -1,0 +1,50 @@
+<!doctype html>
+
+<html>
+   <head>
+      <title>Freddy</title>
+        <meta charset="utf-8">
+        <style>
+           h1 {
+            text-align: center;
+            font-family: "Source Sans Pro", sans-serif;
+            font-weight: bold;
+            color: white;
+           }
+           body {
+            background-image: url('bg.jpg');
+           }
+        </style>
+    </head>
+    <body>
+    <center>
+    <audio id="myAudio">
+       <source src="honk.mp3" type="audio/mpeg">
+    </audio>
+    
+    <h1>Freddy</h1>
+    <br>
+        <a href="javascript:playAudio()">
+             <img src="freddy.png" alt="Girl in a jacket" width="250" height="300">
+        </a>
+    <br>
+    <script>
+    var count = 0;
+    var x = document.getElementById("myAudio"); 
+
+    function playAudio() { 
+      x.pause;
+      x.currentTime = 0;
+      x.play();
+      count = count + 1;
+      document.getElementById("score").innerHTML = count;
+    }
+
+    </script>
+    <audio id="freddy" controls>
+        <source src="march.mp3" type="audio/mpeg">
+    </audio>
+    </center>
+    <h1 id="score">0</h1>
+    </body>
+</html>
